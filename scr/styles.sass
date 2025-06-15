@@ -8,14 +8,14 @@ $color-texto:  rgb(255, 255, 250)
 *
   padding: 0
   margin: 0
-  font-family: "roboto"
+  font-family: "roboto", sans-serif
 
 body
   background-color: $color-primario
   color: $color-texto
 
 nav
-  height: 600px
+  height: 800px
   background-image: url(./images/fondo-netflix.jpg)
   z-index: 1
   background-repeat: no-repeat
@@ -40,7 +40,7 @@ nav
   display: flex
   border: 1px solid $color-texto
   border-radius: 5px
-  background-color: $color-primario
+  background-color: rgb(45, 45, 45, 0.9)
   color: $color-texto
   align-items: center
   gap: 10px
@@ -61,7 +61,7 @@ nav
   margin: 16px 0
   font-size: 17px
 
-.nav-texo
+.nav-texto
   display: flex
   flex-direction: column
   justify-content: center
@@ -81,15 +81,19 @@ h1
   font-style: normal
   font-variation-settings:"wdth" 100
   font-size: 3.5rem 
+  text-align: center
   width: 100%
   height: 100%
 
 h3
   display: flex
   justify-content: center
-  flex-wrap: auto
+  text-align: center
   font-size: 1.7rem
   font-weight: 300
+
+.info-bar
+  text-align: center
 
 .email
   display: flex
@@ -97,18 +101,27 @@ h3
   width: 100%
   height: 100%
   gap: 5px
+  margin-top: 20px
 
 .email-bar
-  color: white
-  background-color: transparent 
+  background-color: rgb(45, 45, 45, 0.9)
+  color: $color-texto
   filter: opacity(90%)
   padding: 16px
   border-radius: 5px
+  width: 20%
 
 .email-button
   background-color: $color-secundario
-  color: white
-  fill: white
+  border: none
+  font-size: 1.5rem
+  color: $color-texto
+  fill: $color-texto
   border-radius: 5px
+  width: 10%
 
-
+header
+  position: absolute
+  background-color: rgba(20, 18, 102, 0.585)
+  border-top: 7px solid $color-secundario
+  border-radius: 30%

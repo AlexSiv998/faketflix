@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  height: 600px;
+  height: 800px;
   background-image: url(./images/fondo-netflix.jpg);
   z-index: 1;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ nav {
   display: flex;
   border: 1px solid rgb(255, 255, 250);
   border-radius: 5px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(45, 45, 45, 0.9);
   color: rgb(255, 255, 250);
   align-items: center;
   gap: 10px;
@@ -69,7 +69,7 @@ nav {
   font-size: 17px;
 }
 
-.nav-texo {
+.nav-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,6 +90,7 @@ h1 {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 3.5rem;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -97,9 +98,13 @@ h1 {
 h3 {
   display: flex;
   justify-content: center;
-  flex-wrap: auto;
+  text-align: center;
   font-size: 1.7rem;
   font-weight: 300;
+}
+
+.info-bar {
+  text-align: center;
 }
 
 .email {
@@ -108,19 +113,31 @@ h3 {
   width: 100%;
   height: 100%;
   gap: 5px;
+  margin-top: 20px;
 }
 
 .email-bar {
-  color: white;
-  background-color: transparent;
+  background-color: rgba(45, 45, 45, 0.9);
+  color: rgb(255, 255, 250);
   filter: opacity(90%);
   padding: 16px;
   border-radius: 5px;
+  width: 20%;
 }
 
 .email-button {
   background-color: rgb(229, 9, 20);
-  color: white;
-  fill: white;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 250);
+  fill: rgb(255, 255, 250);
   border-radius: 5px;
+  width: 10%;
+}
+
+header {
+  position: absolute;
+  background-color: rgba(20, 18, 102, 0.585);
+  border-top: 7px solid rgb(229, 9, 20);
+  border-radius: 30%;
 }/*# sourceMappingURL=styles.css.map */
