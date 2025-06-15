@@ -1,28 +1,126 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "roboto";
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 250);
 }
 
 nav {
-  padding: 15px 80px;
+  height: 600px;
+  background-image: url(./images/fondo-netflix.jpg);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(90%);
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding: 18px 9rem;
+  margin-bottom: 7rem;
 }
 
 .logo {
-  display: flex;
-  color: rgb(229, 9, 20);
-  fill: rgb(229, 9, 20);
   width: 10%;
   height: 10%;
   justify-content: center;
+  margin-right: 16px;
 }
 
 .sesion {
   display: flex;
   font-size: 10px;
   gap: 10px;
+}
+
+.idioma {
+  display: flex;
+  border: 1px solid rgb(255, 255, 250);
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 250);
+  align-items: center;
+  gap: 10px;
+  padding: 5px 15px;
+  margin: 16px 0;
+  font-size: 17px;
+}
+
+.logo-i {
+  width: 16px;
+}
+
+.iniciar-sesion {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(229, 9, 20);
+  color: rgb(255, 255, 250);
+  align-items: center;
+  gap: 3px;
+  padding: 5px 15px;
+  margin: 16px 0;
+  font-size: 17px;
+}
+
+.nav-texo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: auto;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 3.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: auto;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.email-bar {
+  color: white;
+  background-color: transparent;
+  filter: opacity(90%);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.email-button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  fill: white;
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */

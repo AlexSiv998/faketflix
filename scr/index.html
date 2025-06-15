@@ -5,31 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faketflix</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
 <body>
-  <nav>
+  <nav id="fondo">
     <div class="nav-bar">
       <div class="logo">
         <img src="./netflix_svg/logo-n.svg" alt="logo netflix">
       </div>
       <div class="sesion">
-        <button>
+        <button class="idioma">
+          <img class="logo-i" src="./netflix_svg/traductor.svg" alt="logo de traductor">
           <details>
             <summary>
               Español
             </summary> 
           </details>
         </button>
-        <button> iniciar sesion</button>
+        <button class="iniciar-sesion"> iniciar sesion</button>
       </div>
     </div>
-    <div>
-      <h1> Películas y series ilimitadas y mucho más </h1>
+    <div class="nav-texo">
+      <h1> Películas y series ilimitadas y mucho más </h1> <!-- este elemento cambia el font-side en responsive-->
       <h3> A partir de USD 3,99. Cancela cuando quieras. </h3>
       <p> ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix. </p>
-      <div>
-        <input placeholder="Email" type="text">
-        <button> Empezar </button>
+      <div class="email">
+        <input class="email-bar" placeholder="Email" type="text">
+        <button class="email-button"> Empezar <img src="./netflix_svg/flecha.svg" alt="flecha"></button>
       </div>
     </div>
   </nav>
@@ -152,9 +156,9 @@
       <div>
         <p></p>
       </div>
-      <div>
+      <div class="email">
         <input placeholder="Email" type="text">
-        <button> Empezar </button>
+        <button> Empezar <img src="./netflix_svg/flecha.svg" alt="flecha"></button>
       </div>
     </section>
   </main>
